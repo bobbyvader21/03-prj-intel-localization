@@ -1,0 +1,448 @@
+/* ==================================
+   GENERAL PAGE STYLING
+================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #f4f7f9;
+
+  color: #1f2933;
+}
+
+
+/* ==================================
+   HERO SECTION
+================================== */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #0796d2,
+    #00529b
+  );
+
+  color: white;
+
+  text-align: center;
+
+  padding: 45px 20px 55px;
+}
+
+
+/* Hero content container */
+
+.hero-content {
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+
+/* Intel Logo */
+
+.intel-logo {
+  width: 120px;
+
+  max-width: 40%;
+
+  height: auto;
+
+  margin-bottom: 25px;
+}
+
+
+/* Main Heading */
+
+.hero h1 {
+  font-size: 3rem;
+
+  text-transform: uppercase;
+
+  margin-top: 0;
+
+  margin-bottom: 22px;
+
+  line-height: 1.15;
+}
+
+
+/* Small line under heading */
+
+.hero-line {
+  width: 110px;
+
+  height: 4px;
+
+  background-color: #20c4f4;
+
+  margin: 0 auto 28px;
+}
+
+
+/* Hero description */
+
+.hero p {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  font-size: 1.15rem;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================
+   TIMELINE WRAPPER
+================================== */
+
+.timeline-wrapper {
+  width: 100%;
+
+  padding: 50px 20px 20px;
+}
+
+
+/* ==================================
+   TIMELINE
+================================== */
+
+.timeline {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: stretch;
+
+  gap: 25px;
+
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  padding: 10px 10px 25px;
+}
+
+
+/* ==================================
+   TIMELINE CARDS
+================================== */
+
+.timeline-card {
+  background-color: white;
+
+  flex: 0 0 270px;
+
+  min-width: 270px;
+
+  padding: 22px;
+
+  border-radius: 3px;
+
+  box-shadow: 0 4px 12px
+    rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Hover movement */
+
+.timeline-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 12px 24px
+    rgba(0, 0, 0, 0.20);
+}
+
+
+/* ==================================
+   YEARS
+================================== */
+
+.timeline-card h2 {
+  color: #17417d;
+
+  font-size: 2rem;
+
+  margin-top: 0;
+
+  margin-bottom: 10px;
+}
+
+
+/* ==================================
+   CARD TITLES
+================================== */
+
+.timeline-card h3 {
+  color: #292929;
+
+  font-size: 1.25rem;
+
+  margin-top: 0;
+
+  margin-bottom: 14px;
+}
+
+
+/* ==================================
+   IMAGE AREA
+================================== */
+
+.image-container {
+  position: relative;
+
+  width: 100%;
+
+  height: 170px;
+
+  overflow: hidden;
+}
+
+
+/* Timeline Image */
+
+.timeline-image {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+
+/* ==================================
+   HIDDEN CARD DETAILS
+================================== */
+
+.card-details {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 18px;
+
+  background-color: rgba(
+    0,
+    72,
+    130,
+    0.88
+  );
+
+  color: white;
+
+  opacity: 0;
+
+  transition: opacity 0.35s ease;
+}
+
+
+/* Description text */
+
+.card-details p {
+  margin: 0;
+
+  color: white;
+
+  font-size: 0.95rem;
+
+  line-height: 1.45;
+}
+
+
+/* ==================================
+   HOVER EFFECT
+================================== */
+
+/* Show details when card is hovered */
+
+.timeline-card:hover .card-details {
+  opacity: 1;
+}
+
+
+/* Slight image zoom */
+
+.timeline-card:hover .timeline-image {
+  transform: scale(1.08);
+
+  filter: brightness(0.65);
+}
+
+
+/* ==================================
+   SCROLL MESSAGE
+================================== */
+
+.scroll-message {
+  text-align: center;
+
+  font-weight: bold;
+
+  color: #333;
+
+  margin: 15px 20px 35px;
+}
+
+
+/* ==================================
+   SCROLLBAR
+================================== */
+
+.timeline::-webkit-scrollbar {
+  height: 9px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background-color: #d9e1e7;
+
+  border-radius: 10px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background-color: #0068b5;
+
+  border-radius: 10px;
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+  background-color: #004f8a;
+}
+
+
+/* ==================================
+   TABLET
+================================== */
+
+@media (max-width: 1200px) {
+
+  .timeline {
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* ==================================
+   MOBILE RESPONSIVE DESIGN
+================================== */
+
+@media (max-width: 768px) {
+
+  /* Hero */
+
+  .hero {
+    padding: 35px 20px 40px;
+  }
+
+
+  .intel-logo {
+    width: 100px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+
+  .hero-line {
+    width: 80px;
+  }
+
+
+  /* Timeline */
+
+  .timeline-wrapper {
+    padding: 30px 20px 10px;
+  }
+
+
+  .timeline {
+    flex-direction: column;
+
+    align-items: center;
+
+    overflow-x: visible;
+
+    padding: 0;
+
+    gap: 25px;
+  }
+
+
+  /* Cards */
+
+  .timeline-card {
+    flex: none;
+
+    width: 100%;
+
+    max-width: 420px;
+
+    min-width: 0;
+  }
+
+
+  /* Taller images on phone */
+
+  .image-container {
+    height: 220px;
+  }
+
+
+  /* Hover movement reduced */
+
+  .timeline-card:hover {
+    transform: translateY(-4px);
+  }
+
+
+  /* Scroll text */
+
+  .scroll-message {
+    font-size: 0.9rem;
+  }
+
+}
