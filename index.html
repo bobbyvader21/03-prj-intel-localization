@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
   <title>Intel: Sustainability Through the Ages</title>
 
+  <!-- Bootstrap RTL -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 
 <body>
 
@@ -23,14 +41,17 @@
       <img
         class="intel-logo"
         src="img/intel-header-logo.svg"
-        alt="Intel Logo"
+        alt="Intel logo"
       />
 
       <h1>
         Sustainability Through the Ages
       </h1>
 
-      <div class="hero-line"></div>
+      <div
+        class="hero-line"
+        aria-hidden="true"
+      ></div>
 
       <p>
         Explore Intel's journey through time, discovering how our
@@ -49,10 +70,14 @@
 
   <main class="timeline-wrapper">
 
-    <section class="timeline">
+    <section
+      class="timeline"
+      aria-label="Intel history timeline"
+    >
 
 
       <!-- Card 1 -->
+
       <div class="timeline-card">
 
         <h2>1968</h2>
@@ -64,15 +89,17 @@
           <img
             class="timeline-image"
             src="img/1.jpg"
-            alt="Early Intel technology"
+            alt="Early Intel technology from the company's founding era"
           />
 
           <div class="card-details">
+
             <p>
               Robert Noyce and Gordon Moore rename the newly formed
               company NM Electronics to Intel Corporation, laying the
               foundation for decades of technological innovation.
             </p>
+
           </div>
 
         </div>
@@ -81,6 +108,7 @@
 
 
       <!-- Card 2 -->
+
       <div class="timeline-card">
 
         <h2>1971</h2>
@@ -92,15 +120,17 @@
           <img
             class="timeline-image"
             src="img/2.jpg"
-            alt="Intel microprocessor"
+            alt="Intel 4004 microprocessor introduced in 1971"
           />
 
           <div class="card-details">
+
             <p>
               Intel debuts the 4004, the world's first commercial
               microprocessor, igniting the microprocessor revolution
               and helping shape the future of computing.
             </p>
+
           </div>
 
         </div>
@@ -109,6 +139,7 @@
 
 
       <!-- Card 3 -->
+
       <div class="timeline-card">
 
         <h2>1978</h2>
@@ -120,15 +151,17 @@
           <img
             class="timeline-image"
             src="img/3.jpg"
-            alt="Intel 8086 processor"
+            alt="Intel 8086 processor introduced in 1978"
           />
 
           <div class="card-details">
+
             <p>
               Intel launches the 8086 processor, establishing the x86
               architecture that would become the foundation for
               generations of personal computers and servers.
             </p>
+
           </div>
 
         </div>
@@ -137,6 +170,7 @@
 
 
       <!-- Card 4 -->
+
       <div class="timeline-card">
 
         <h2>1985</h2>
@@ -148,15 +182,17 @@
           <img
             class="timeline-image"
             src="img/4.jpg"
-            alt="Intel 386 processor"
+            alt="Intel 386 processor introduced in 1985"
           />
 
           <div class="card-details">
+
             <p>
               Intel introduces the 386 processor with 32-bit
               architecture, ushering in a new era of performance
               and multitasking for personal computers.
             </p>
+
           </div>
 
         </div>
@@ -173,6 +209,415 @@
     Scroll to view timeline | Hover over cards to learn more!
   </p>
 
+
+
+  <!-- =========================
+       THREE-COLUMN SECTION
+  ========================== -->
+
+  <section
+    class="sustainability-section py-5"
+    aria-labelledby="sustainability-heading"
+  >
+
+    <div class="container">
+
+
+      <!-- Section Heading -->
+
+      <div class="text-center mb-5">
+
+        <h2
+          id="sustainability-heading"
+          class="fw-bold"
+        >
+          Building a More Sustainable Future
+        </h2>
+
+        <p class="section-intro">
+          Discover how Intel is working toward a more responsible
+          and sustainable future through technology and innovation.
+        </p>
+
+      </div>
+
+
+      <!-- Bootstrap Grid -->
+
+      <div class="row g-4">
+
+
+        <!-- Column 1 -->
+
+        <div class="col-12 col-md-4">
+
+          <article class="info-card h-100 p-4">
+
+            <div
+              class="info-icon"
+              aria-hidden="true"
+            >
+              <i class="bi bi-globe-americas"></i>
+            </div>
+
+            <h3>
+              Climate Action
+            </h3>
+
+            <p>
+              Intel continues working to reduce its environmental
+              impact through cleaner energy, efficient operations,
+              and responsible manufacturing practices.
+            </p>
+
+            <a
+              href="#"
+              class="learn-more"
+              aria-label="Learn more about Intel climate action"
+            >
+              Learn More
+
+              <i
+                class="bi bi-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <!-- Column 2 -->
+
+        <div class="col-12 col-md-4">
+
+          <article class="info-card h-100 p-4">
+
+            <div
+              class="info-icon"
+              aria-hidden="true"
+            >
+              <i class="bi bi-droplet-half"></i>
+            </div>
+
+            <h3>
+              Water Conservation
+            </h3>
+
+            <p>
+              Intel supports water restoration projects while
+              improving water efficiency across its facilities
+              and manufacturing operations.
+            </p>
+
+            <a
+              href="#"
+              class="learn-more"
+              aria-label="Learn more about Intel water conservation"
+            >
+              Learn More
+
+              <i
+                class="bi bi-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <!-- Column 3 -->
+
+        <div class="col-12 col-md-4">
+
+          <article class="info-card h-100 p-4">
+
+            <div
+              class="info-icon"
+              aria-hidden="true"
+            >
+              <i class="bi bi-recycle"></i>
+            </div>
+
+            <h3>
+              Responsible Technology
+            </h3>
+
+            <p>
+              Intel develops technology with sustainability in
+              mind while reducing waste and supporting a more
+              circular economy.
+            </p>
+
+            <a
+              href="#"
+              class="learn-more"
+              aria-label="Learn more about Intel responsible technology"
+            >
+              Learn More
+
+              <i
+                class="bi bi-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </a>
+
+          </article>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       NEWSLETTER SECTION
+  ========================== -->
+
+  <section
+    class="newsletter-section py-5"
+    aria-labelledby="newsletter-heading"
+  >
+
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-md-9 col-lg-7">
+
+
+          <!-- Newsletter Heading -->
+
+          <div class="text-center mb-4">
+
+            <div
+              class="newsletter-icon"
+              aria-hidden="true"
+            >
+              <i class="bi bi-envelope"></i>
+            </div>
+
+            <h2
+              id="newsletter-heading"
+              class="fw-bold"
+            >
+              Sustainability Newsletter
+            </h2>
+
+            <p>
+              Stay informed about Intel's sustainability initiatives,
+              environmental progress, and innovations.
+            </p>
+
+          </div>
+
+
+          <!-- Subscription Form -->
+
+          <form
+            class="newsletter-form"
+            action="#"
+            method="post"
+          >
+
+
+            <!-- Name -->
+
+            <div class="mb-3">
+
+              <label
+                for="subscriberName"
+                class="form-label fw-semibold"
+              >
+                Name
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="subscriberName"
+                name="name"
+                autocomplete="name"
+                placeholder="Enter your name"
+              />
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="mb-3">
+
+              <label
+                for="subscriberEmail"
+                class="form-label fw-semibold"
+              >
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                class="form-control"
+                id="subscriberEmail"
+                name="email"
+                autocomplete="email"
+                placeholder="name@example.com"
+                aria-describedby="emailHelp"
+                required
+              />
+
+              <div
+                id="emailHelp"
+                class="form-text"
+              >
+                We'll only use your email to send sustainability updates.
+              </div>
+
+            </div>
+
+
+            <!-- Consent -->
+
+            <div class="form-check mb-4">
+
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="newsletterConsent"
+                name="consent"
+                required
+              />
+
+              <label
+                class="form-check-label"
+                for="newsletterConsent"
+              >
+                I agree to receive Intel sustainability news
+                and updates.
+              </label>
+
+            </div>
+
+
+            <!-- Subscribe Button -->
+
+            <button
+              type="submit"
+              class="btn btn-primary subscribe-button w-100"
+            >
+              <i
+                class="bi bi-envelope-check me-2"
+                aria-hidden="true"
+              ></i>
+
+              Subscribe
+            </button>
+
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div
+        class="d-flex flex-column flex-md-row
+               justify-content-between
+               align-items-center
+               gap-3"
+      >
+
+
+        <!-- Copyright -->
+
+        <p class="mb-0">
+          &copy; 2026 Intel Corporation.
+          Educational project.
+        </p>
+
+
+        <!-- Footer Navigation -->
+
+        <nav aria-label="Footer navigation">
+
+          <ul
+            class="nav justify-content-center"
+          >
+
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#"
+              >
+                Privacy Policy
+              </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#"
+              >
+                Terms of Use
+              </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#"
+              >
+                Contact
+              </a>
+
+            </li>
+
+          </ul>
+
+        </nav>
+
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap JavaScript -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  ></script>
 
 </body>
 
